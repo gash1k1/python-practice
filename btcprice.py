@@ -12,3 +12,6 @@ async def send_price(context):
 app = ApplicationBuilder().token(token).build()
 app.job_queue.run_repeating(send_price, interval=60, first=0)
 app.run_polling()
+
+print('hello world')
+print('ебашу')
